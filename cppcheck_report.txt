@@ -1,0 +1,764 @@
+src/api/faults.c:248:17: style: Variable 'ret' is reassigned a value before the old one has been used. [redundantAssignment]
+            ret = setMR(receiver, receiveIPCBuffer,
+                ^
+src/api/faults.c:243:17: note: ret is assigned
+            ret = setMR(receiver, receiveIPCBuffer,
+                ^
+src/api/faults.c:248:17: note: ret is overwritten
+            ret = setMR(receiver, receiveIPCBuffer,
+                ^
+src/api/syscall.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/arch/arm/32/kernel/vspace.c:1179:17: style: The scope of the variable 'pdSlot' can be reduced. [variableScope]
+    pde_t *pd, *pdSlot;
+                ^
+src/arch/arm/32/kernel/vspace.c:1180:18: style: The scope of the variable 'pdIndex' can be reduced. [variableScope]
+    unsigned int pdIndex;
+                 ^
+src/arch/arm/32/kernel/vspace.c:1280:18: style: The scope of the variable 'offset' can be reduced. [variableScope]
+    unsigned int offset;
+                 ^
+src/arch/arm/32/kernel/vspace.c:1762:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/32/kernel/vspace.c:1762:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT;CONFIG_DEBUG_BUILD' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/32/kernel/vspace.c:1762:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT;CONFIG_PRINTING' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/32/machine/fpu.c:114:0: information: Skipping configuration 'CONFIG_HAVE_FPU' since the value of 'CONFIG_HAVE_FPU' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_HAVE_FPU)) {
+^
+src/arch/arm/32/machine/fpu.c:132:0: information: Skipping configuration 'CONFIG_HAVE_FPU' since the value of 'CONFIG_HAVE_FPU' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_HAVE_FPU)) {
+^
+src/arch/arm/32/machine/fpu.c:143:0: information: Skipping configuration 'CONFIG_HAVE_FPU' since the value of 'CONFIG_HAVE_FPU' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (!config_set(CONFIG_HAVE_FPU)) {
+^
+src/arch/arm/64/kernel/vspace.c:139:9: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+        if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+        ^
+src/arch/arm/64/kernel/vspace.c:141:11: note: Found duplicate branches for 'if' and 'else'.
+        } else {
+          ^
+src/arch/arm/64/kernel/vspace.c:139:9: note: Found duplicate branches for 'if' and 'else'.
+        if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+        ^
+src/arch/arm/64/kernel/vspace.c:139:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/64/kernel/vspace.c:146:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/64/kernel/vspace.c:153:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/64/kernel/vspace.c:1468:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/64/kernel/vspace.c:1627:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/64/kernel/vspace.c:139:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT;CONFIG_KERNEL_LOG_BUFFER' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/64/kernel/vspace.c:146:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT;CONFIG_KERNEL_LOG_BUFFER' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/64/kernel/vspace.c:153:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT;CONFIG_KERNEL_LOG_BUFFER' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/64/kernel/vspace.c:1468:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT;CONFIG_KERNEL_LOG_BUFFER' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/64/kernel/vspace.c:1627:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT;CONFIG_KERNEL_LOG_BUFFER' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/64/machine/capdl.c:124:69: style:inconclusive: Function '_cap_frame_print_attrs_vptr' argument 2 names different: declaration 'vspaceRoot' definition 'vspace'. [funcArgNamesDifferent]
+static void _cap_frame_print_attrs_vptr(word_t vptr, vspace_root_t *vspace)
+                                                                    ^
+src/arch/arm/64/machine/capdl.c:29:69: note: Function '_cap_frame_print_attrs_vptr' argument 2 names different: declaration 'vspaceRoot' definition 'vspace'.
+static void _cap_frame_print_attrs_vptr(word_t vptr, vspace_root_t *vspaceRoot);
+                                                                    ^
+src/arch/arm/64/machine/capdl.c:124:69: note: Function '_cap_frame_print_attrs_vptr' argument 2 names different: declaration 'vspaceRoot' definition 'vspace'.
+static void _cap_frame_print_attrs_vptr(word_t vptr, vspace_root_t *vspace)
+                                                                    ^
+src/arch/arm/armv/armv7-a/tlb.c:20:11: style: Variable 'n' is assigned a value that is never used. [unreadVariable]
+    int n = tlbLockCount;
+          ^
+src/arch/arm/benchmark/benchmark.c:31:0: information: Skipping configuration 'CONFIG_ENABLE_BENCHMARKS;PMCNTENSET' since the value of 'PMCNTENSET' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    SYSTEM_WRITE_WORD(PMCNTENSET, BIT(CCNT_INDEX));
+^
+src/arch/arm/c_traps.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 13 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/arch/arm/kernel/boot.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/arch/arm/kernel/boot.c:135:0: information: Skipping configuration 'CONFIG_ARM_ENABLE_PMU_OVERFLOW_INTERRUPT;KERNEL_PMU_IRQ' since the value of 'KERNEL_PMU_IRQ' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    setIRQState(IRQReserved, CORE_IRQ_TO_IRQT(0, KERNEL_PMU_IRQ));
+^
+src/arch/arm/kernel/boot.c:183:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/kernel/boot.c:598:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/kernel/boot.c:183:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT;ENABLE_SMP_SUPPORT' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/kernel/boot.c:598:0: information: Skipping configuration 'CONFIG_ARM_HYPERVISOR_SUPPORT;ENABLE_SMP_SUPPORT' since the value of 'CONFIG_ARM_HYPERVISOR_SUPPORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_ARM_HYPERVISOR_SUPPORT)) {
+^
+src/arch/arm/kernel/boot.c:218:9: style: The if condition is the same as the previous if condition [duplicateCondition]
+    if (haveHWFPU) {
+        ^
+src/arch/arm/kernel/boot.c:213:9: note: First condition
+    if (haveHWFPU) {
+        ^
+src/arch/arm/kernel/boot.c:218:9: note: Second condition
+    if (haveHWFPU) {
+        ^
+src/arch/arm/machine/debug.c:1010:20: style: Variable 'ret.status' is reassigned a value before the old one has been used. [redundantAssignment]
+        ret.status = hsr_or_fsr & 0xF;
+                   ^
+src/arch/arm/machine/debug.c:1009:20: note: ret.status is assigned
+        ret.status <<= 4;
+                   ^
+src/arch/arm/machine/debug.c:1010:20: note: ret.status is overwritten
+        ret.status = hsr_or_fsr & 0xF;
+                   ^
+src/arch/arm/machine/gic_v2.c:27:0: information: Skipping configuration 'GIC_V2_DISTRIBUTOR_PPTR;GIC_V2_CONTROLLER_PPTR;GIC_V2_VCPUCTRL_PPTR' since the value of 'GIC_V2_DISTRIBUTOR_PPTR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    (volatile struct gic_dist_map *)(GIC_V2_DISTRIBUTOR_PPTR);
+^
+src/arch/arm/machine/gic_v2.c:34:0: information: Skipping configuration 'GIC_V2_DISTRIBUTOR_PPTR;GIC_V2_CONTROLLER_PPTR;GIC_V2_VCPUCTRL_PPTR' since the value of 'GIC_V2_CONTROLLER_PPTR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    (volatile struct gic_cpu_iface_map *)(GIC_V2_CONTROLLER_PPTR);
+^
+src/arch/arm/machine/l2c_310.c:226:0: information: Skipping configuration 'L2CC_L2C310_PPTR;OMAP4' since the value of 'L2CC_L2C310_PPTR' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    = (volatile struct l2cc_map *)L2CC_L2C310_PPTR;
+^
+src/arch/arm/object/interrupt.c:30:0: information: Skipping configuration 'HAVE_SET_TRIGGER' since the value of 'HAVE_SET_TRIGGER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (!config_set(HAVE_SET_TRIGGER)) {
+^
+src/arch/arm/object/iospace.c:375:14: style: The scope of the variable 'asid' can be reduced. [variableScope]
+    uint32_t asid;
+             ^
+src/arch/arm/object/iospace.c:376:14: style: The scope of the variable 'pd' can be reduced. [variableScope]
+    iopde_t *pd;
+             ^
+src/arch/arm/object/smmu.c:31:12: style: The scope of the variable 'thread' can be reduced. [variableScope]
+    tcb_t *thread;
+           ^
+src/arch/arm/object/smmu.c:361:12: style: The scope of the variable 'cbSlot' can be reduced. [variableScope]
+    cte_t *cbSlot;
+           ^
+src/arch/riscv/kernel/vspace.c:76:32: style: Same value in both branches of ternary operator. [duplicateValueTernary]
+                   is_leaf ? 0 : 0,     /* user (leaf)/reserved (non-leaf) */
+                               ^
+src/arch/riscv/object/interrupt.c:42:0: information: Skipping configuration 'HAVE_SET_TRIGGER' since the value of 'HAVE_SET_TRIGGER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (!config_set(HAVE_SET_TRIGGER)) {
+^
+src/arch/x86/32/kernel/elf.c:56:19: style: The scope of the variable 'len' can be reduced. [variableScope]
+    uint32_t      len;
+                  ^
+src/arch/x86/32/kernel/vspace.c:599:97: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+        SMP_COND_STATEMENT(tlb_bitmap_unset(paddr_to_pptr(getCurrentPD()), getCurrentCPUIndex());)
+                                                                                                ^
+src/arch/x86/64/c_traps.c:260:0: information: Skipping configuration 'CONFIG_HARDWARE_DEBUG_API' since the value of 'CONFIG_HARDWARE_DEBUG_API' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        (!config_set(CONFIG_SYSENTER) || !config_set(CONFIG_HARDWARE_DEBUG_API)
+^
+src/arch/x86/64/c_traps.c:260:0: information: Skipping configuration 'CONFIG_HARDWARE_DEBUG_API;CONFIG_VTX' since the value of 'CONFIG_HARDWARE_DEBUG_API' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        (!config_set(CONFIG_SYSENTER) || !config_set(CONFIG_HARDWARE_DEBUG_API)
+^
+src/arch/x86/64/c_traps.c:262:0: information: Skipping configuration 'CONFIG_KERNEL_SKIM_WINDOW' since the value of 'CONFIG_KERNEL_SKIM_WINDOW' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_KERNEL_SKIM_WINDOW)) {
+^
+src/arch/x86/64/c_traps.c:262:0: information: Skipping configuration 'CONFIG_KERNEL_SKIM_WINDOW;ENABLE_SMP_SUPPORT' since the value of 'CONFIG_KERNEL_SKIM_WINDOW' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_KERNEL_SKIM_WINDOW)) {
+^
+src/arch/x86/64/kernel/elf.c:53:17: style: The scope of the variable 'len' can be reduced. [variableScope]
+    uint64_t    len;
+                ^
+src/arch/x86/64/kernel/vspace.c:497:70: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+        SMP_COND_STATEMENT(tlb_bitmap_set(pml4, getCurrentCPUIndex());)
+                                                                     ^
+src/arch/x86/64/kernel/vspace.c:1433:0: information: Skipping configuration 'CONFIG_HUGE_PAGE' since the value of 'CONFIG_HUGE_PAGE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_HUGE_PAGE) && page_size == X64_HugePage) {
+^
+src/arch/x86/64/kernel/vspace.c:1510:0: information: Skipping configuration 'CONFIG_HUGE_PAGE' since the value of 'CONFIG_HUGE_PAGE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_HUGE_PAGE) && page_size == X64_HugePage) {
+^
+src/arch/x86/64/kernel/vspace.c:1433:0: information: Skipping configuration 'CONFIG_HUGE_PAGE;CONFIG_KERNEL_LOG_BUFFER' since the value of 'CONFIG_HUGE_PAGE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_HUGE_PAGE) && page_size == X64_HugePage) {
+^
+src/arch/x86/64/kernel/vspace.c:1510:0: information: Skipping configuration 'CONFIG_HUGE_PAGE;CONFIG_KERNEL_LOG_BUFFER' since the value of 'CONFIG_HUGE_PAGE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (config_set(CONFIG_HUGE_PAGE) && page_size == X64_HugePage) {
+^
+src/arch/x86/64/kernel/vspace.c:199:0: information: Skipping configuration 'CONFIG_KERNEL_SKIM_WINDOW' since the value of 'CONFIG_KERNEL_SKIM_WINDOW' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                                                  KERNEL_IS_GLOBAL(), /* global */
+^
+src/arch/x86/64/kernel/vspace.c:293:0: information: Skipping configuration 'CONFIG_KERNEL_SKIM_WINDOW' since the value of 'CONFIG_KERNEL_SKIM_WINDOW' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+                             KERNEL_IS_GLOBAL(), /* global */
+^
+src/arch/x86/64/machine/registerset.c:61:36: warning: Logical conjunction always evaluates to false: v > 0x00007fffffffffff && v < 0xffff800000000000. [incorrectLogicOperator]
+        if (v > 0x00007fffffffffff && v < 0xffff800000000000) {
+                                   ^
+src/arch/x86/kernel/apic.c:89:9: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("APIC: number of LVT entries: %d\n", num_lvt_entries);
+        ^
+src/arch/x86/kernel/apic.c:63:9: warning: %lu in format string (no. 1) requires 'unsigned long' but the argument type is 'signed long'. [invalidPrintfArgType_uint]
+        printf("Apic Khz %lu, TSC Mhz %lu, ratio %lu\n", (long) apic_khz, (long) x86KStscMhz, (long) x86KSapicRatio);
+        ^
+src/arch/x86/kernel/apic.c:63:9: warning: %lu in format string (no. 2) requires 'unsigned long' but the argument type is 'signed long'. [invalidPrintfArgType_uint]
+        printf("Apic Khz %lu, TSC Mhz %lu, ratio %lu\n", (long) apic_khz, (long) x86KStscMhz, (long) x86KSapicRatio);
+        ^
+src/arch/x86/kernel/apic.c:63:9: warning: %lu in format string (no. 3) requires 'unsigned long' but the argument type is 'signed long'. [invalidPrintfArgType_uint]
+        printf("Apic Khz %lu, TSC Mhz %lu, ratio %lu\n", (long) apic_khz, (long) x86KStscMhz, (long) x86KSapicRatio);
+        ^
+src/arch/x86/kernel/boot_sys.c:240:13: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+            printf("\tPhysical Memory Region from %lx size %lx type %d\n", (long)mem_start, (long)mem_length, type);
+            ^
+src/arch/x86/kernel/boot_sys.c:573:13: portability: %zd in format string (no. 1) requires 'ssize_t' but the argument type is 'size_t {aka unsigned long}'. [invalidPrintfArgType_sint]
+            printf("Warning: Multiboot has reported more memory map entries, %zd, "
+            ^
+src/arch/x86/kernel/boot_sys.c:372:0: information: Skipping configuration 'CONFIG_KERNEL_SKIM_WINDOW' since the value of 'CONFIG_KERNEL_SKIM_WINDOW' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (ia32_arch_capabilities_msr_get_rdcl_no(cap_msr) && config_set(CONFIG_KERNEL_SKIM_WINDOW)) {
+^
+src/arch/x86/kernel/boot_sys.c:375:0: information: Skipping configuration 'CONFIG_KERNEL_SKIM_WINDOW' since the value of 'CONFIG_KERNEL_SKIM_WINDOW' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        } else if (!ia32_arch_capabilities_msr_get_rdcl_no(cap_msr) && !config_set(CONFIG_KERNEL_SKIM_WINDOW)) {
+^
+src/arch/x86/kernel/boot_sys.c:382:0: information: Skipping configuration 'CONFIG_KERNEL_SKIM_WINDOW' since the value of 'CONFIG_KERNEL_SKIM_WINDOW' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (config_set(CONFIG_KERNEL_SKIM_WINDOW) && x86_cpuid_get_identity()->vendor == X86_VENDOR_AMD) {
+^
+src/arch/x86/kernel/boot_sys.c:387:0: information: Skipping configuration 'CONFIG_KERNEL_SKIM_WINDOW' since the value of 'CONFIG_KERNEL_SKIM_WINDOW' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (!config_set(CONFIG_KERNEL_SKIM_WINDOW) && x86_cpuid_get_identity()->vendor == X86_VENDOR_INTEL) {
+^
+src/arch/x86/kernel/cmdline.c:86:11: style: The scope of the variable 'v' can be reduced. [variableScope]
+    int   v;
+          ^
+src/arch/x86/machine/cpu_identification.c:39:55: warning: Either the condition 'ci==NULL' is redundant or there is possible null pointer dereference: ci. [nullPointerRedundantCheck]
+    MAY_ALIAS uint32_t *vendor_string32 = (uint32_t *)ci->vendor_string;
+                                                      ^
+src/arch/x86/machine/cpu_identification.c:41:12: note: Assuming that condition 'ci==NULL' is not redundant
+    if (ci == NULL) {
+           ^
+src/arch/x86/machine/cpu_identification.c:39:55: note: Null pointer dereference
+    MAY_ALIAS uint32_t *vendor_string32 = (uint32_t *)ci->vendor_string;
+                                                      ^
+src/arch/x86/machine/cpu_identification.c:112:28: style: Variable 'ci->display.family' is reassigned a value before the old one has been used. [redundantAssignment]
+        ci->display.family = (ci->display.extended_model << 4u) + original.model;
+                           ^
+src/arch/x86/machine/cpu_identification.c:111:28: note: ci->display.family is assigned
+        ci->display.family = original.family + ci->display.extended_family;
+                           ^
+src/arch/x86/machine/cpu_identification.c:112:28: note: ci->display.family is overwritten
+        ci->display.family = (ci->display.extended_model << 4u) + original.model;
+                           ^
+src/arch/x86/machine/fpu.c:55:13: warning: %llx in format string (no. 1) requires 'unsigned long long' but the argument type is 'unsigned long'. [invalidPrintfArgType_uint]
+            printf("Requested feature mask is 0x%llx, but only 0x%llx supported\n", desired_features, (long long)xsave_features);
+            ^
+src/arch/x86/object/iospace.c:183:16: style: The scope of the variable 'vtd_pte' can be reduced. [variableScope]
+    vtd_pte_t *vtd_pte;
+               ^
+src/arch/x86/object/iospace.c:400:26: style: The scope of the variable 'level' can be reduced. [variableScope]
+    uint32_t             level;
+                         ^
+src/arch/x86/object/iospace.c:402:26: style: The scope of the variable 'vtd_context_slot' can be reduced. [variableScope]
+    vtd_cte_t           *vtd_context_slot;
+                         ^
+src/arch/x86/object/iospace.c:403:26: style: The scope of the variable 'vtd_pte' can be reduced. [variableScope]
+    vtd_pte_t           *vtd_pte;
+                         ^
+src/arch/x86/object/iospace.c:22:18: style: struct member 'lookupVTDContextSlot_ret::cte' is never used. [unusedStructMember]
+    vtd_cte_t   *cte;
+                 ^
+src/arch/x86/object/vcpu.c:1477:18: style: Local variable 'vpid' shadows outer argument [shadowArgument]
+        uint64_t vpid : 16;
+                 ^
+src/arch/x86/object/vcpu.c:1474:38: note: Shadowed declaration
+static void invvpid_context(uint16_t vpid)
+                                     ^
+src/arch/x86/object/vcpu.c:1477:18: note: Shadow variable
+        uint64_t vpid : 16;
+                 ^
+src/arch/x86/object/vcpu.c:1478:18: style: Local variable 'rsvd' shadows outer variable [shadowVariable]
+        uint64_t rsvd : 48;
+                 ^
+src/arch/x86/object/vcpu.c:1478:18: note: Shadowed declaration
+        uint64_t rsvd : 48;
+                 ^
+src/arch/x86/object/vcpu.c:1478:18: note: Shadow variable
+        uint64_t rsvd : 48;
+                 ^
+src/arch/x86/object/vcpu.c:1479:18: style: Local variable 'address' shadows outer variable [shadowVariable]
+        uint64_t address;
+                 ^
+src/arch/x86/object/vcpu.c:1479:18: note: Shadowed declaration
+        uint64_t address;
+                 ^
+src/arch/x86/object/vcpu.c:1479:18: note: Shadow variable
+        uint64_t address;
+                 ^
+src/arch/x86/object/vcpu.c:52:10: style: struct member 'PACKED::data' is never used. [unusedStructMember]
+    char data[VMXON_REGION_SIZE - sizeof(uint32_t)];
+         ^
+src/benchmark/benchmark_track.c:19:26: style: Variable 'duration' is assigned a value that is never used. [unreadVariable]
+    timestamp_t duration = 0;
+                         ^
+src/fastpath/fastpath.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 22 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/kernel/boot.c:461:92: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+        SMP_COND_STATEMENT(NODE_STATE_ON_CORE(ksIdleThread, i)->tcbSchedContext->scCore = i;)
+                                                                                           ^
+src/kernel/thread.c:114:27: style: The scope of the variable 'sendBuffer' can be reduced. [variableScope]
+    void *receiveBuffer, *sendBuffer;
+                          ^
+src/kernel/thread.c:170:16: style: Local variable 'restart' shadows outer function [shadowFunction]
+        bool_t restart = handleFaultReply(receiver, sender);
+               ^
+src/kernel/thread.c:88:6: note: Shadowed declaration
+void restart(tcb_t *target)
+     ^
+src/kernel/thread.c:170:16: note: Shadow variable
+        bool_t restart = handleFaultReply(receiver, sender);
+               ^
+src/machine/capdl.c:33:18: warning: Either the condition 'watermark<=256' is redundant or the array 'seen_list[256]' is accessed at index 256, which is out of bounds. [arrayIndexOutOfBoundsCond]
+        seen_list[watermark] = c;
+                 ^
+src/machine/capdl.c:32:19: note: Assuming that condition 'watermark<=256' is not redundant
+    if (watermark <= SEEN_SZ) {
+                  ^
+src/machine/capdl.c:33:18: note: Array index out of bounds
+        seen_list[watermark] = c;
+                 ^
+src/machine/capdl.c:331:21: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+                    printf("%d: 0x%lx_%lu_irq\n",
+                    ^
+src/object/cnode.c:793:9: style: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+        break;
+        ^
+src/object/cnode.c:806:9: style: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+        break;
+        ^
+src/object/cnode.c:615:60: style:inconclusive: Function 'finaliseSlot' argument 2 names different: declaration 'exposed' definition 'immediate'. [funcArgNamesDifferent]
+static finaliseSlot_ret_t finaliseSlot(cte_t *slot, bool_t immediate)
+                                                           ^
+src/object/cnode.c:32:60: note: Function 'finaliseSlot' argument 2 names different: declaration 'exposed' definition 'immediate'.
+static finaliseSlot_ret_t finaliseSlot(cte_t *slot, bool_t exposed);
+                                                           ^
+src/object/cnode.c:615:60: note: Function 'finaliseSlot' argument 2 names different: declaration 'exposed' definition 'immediate'.
+static finaliseSlot_ret_t finaliseSlot(cte_t *slot, bool_t immediate)
+                                                           ^
+src/object/cnode.c:664:53: style:inconclusive: Function 'reduceZombie' argument 2 names different: declaration 'exposed' definition 'immediate'. [funcArgNamesDifferent]
+static exception_t reduceZombie(cte_t *slot, bool_t immediate)
+                                                    ^
+src/object/cnode.c:34:53: note: Function 'reduceZombie' argument 2 names different: declaration 'exposed' definition 'immediate'.
+static exception_t reduceZombie(cte_t *slot, bool_t exposed);
+                                                    ^
+src/object/cnode.c:664:53: note: Function 'reduceZombie' argument 2 names different: declaration 'exposed' definition 'immediate'.
+static exception_t reduceZombie(cte_t *slot, bool_t immediate)
+                                                    ^
+src/object/objecttype.c:188:51: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+            SMP_COND_STATEMENT(remoteTCBStall(tcb);)
+                                                  ^
+src/object/schedcontext.c:255:42: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+    SMP_COND_STATEMENT((maybeStallSC(sc));)
+                                         ^
+src/object/tcb.c:800:82: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+    SMP_COND_STATEMENT(remoteTCBStall(TCB_PTR(cap_thread_cap_get_capTCBPtr(cap)));)
+                                                                                 ^
+src/plat/pc99/machine/acpi.c:348:21: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+                    printf(
+                    ^
+src/plat/pc99/machine/acpi.c:362:21: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+                    printf("ACPI: MADT_ISO bus=%d source=%d gsi=%d flags=0x%x\n",
+                    ^
+src/plat/pc99/machine/acpi.c:376:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("ACPI: %d CPU(s) detected\n", num_cpu);
+    ^
+src/plat/pc99/machine/acpi.c:543:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("ACPI: %d IOMMUs detected\n", *num_drhu);
+    ^
+src/plat/pc99/machine/acpi.c:284:25: style: The scope of the variable 'acpi_madt' can be reduced. [variableScope]
+    acpi_madt_t        *acpi_madt;
+                        ^
+src/plat/pc99/machine/acpi.c:288:18: style: The scope of the variable 'acpi_madt_mapped' can be reduced. [variableScope]
+    acpi_madt_t *acpi_madt_mapped;
+                 ^
+src/plat/pc99/machine/acpi.c:387:25: style: The scope of the variable 'acpi_fadt' can be reduced. [variableScope]
+    acpi_fadt_t        *acpi_fadt;
+                        ^
+src/plat/pc99/machine/acpi.c:390:18: style: The scope of the variable 'acpi_fadt_mapped' can be reduced. [variableScope]
+    acpi_fadt_t *acpi_fadt_mapped;
+                 ^
+src/plat/pc99/machine/acpi.c:431:27: style: The scope of the variable 'acpi_dmar' can be reduced. [variableScope]
+    acpi_dmar_t          *acpi_dmar;
+                          ^
+src/plat/pc99/machine/acpi.c:437:18: style: The scope of the variable 'acpi_dmar_mapped' can be reduced. [variableScope]
+    acpi_dmar_t *acpi_dmar_mapped;
+                 ^
+src/plat/pc99/machine/hardware.c:84:14: style: The scope of the variable 'valid_models' can be reduced. [variableScope]
+    uint32_t valid_models[] = {
+             ^
+src/plat/pc99/machine/intel-vtd.c:475:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("IOMMU 0x%x: %d-bit domain IDs supported\n", i, bits_supported);
+        ^
+src/plat/pc99/machine/intel-vtd.c:175:15: style: The scope of the variable 'iotlb_reg_upper' can be reduced. [variableScope]
+    uint32_t  iotlb_reg_upper;
+              ^
+src/plat/pc99/machine/intel-vtd.c:176:15: style: The scope of the variable 'ivo_offset' can be reduced. [variableScope]
+    uint32_t  ivo_offset;
+              ^
+src/plat/pc99/machine/intel-vtd.c:214:14: style: The scope of the variable 'address' can be reduced. [variableScope]
+    uint32_t address[2] UNUSED;
+             ^
+src/plat/pc99/machine/intel-vtd.c:216:14: style: The scope of the variable 'num_fault_regs' can be reduced. [variableScope]
+    uint32_t num_fault_regs;
+             ^
+src/plat/pc99/machine/intel-vtd.c:217:14: style: The scope of the variable 'fr_reg' can be reduced. [variableScope]
+    uint32_t fr_reg;
+             ^
+src/plat/pc99/machine/intel-vtd.c:219:14: style: The scope of the variable 'fault_record_index' can be reduced. [variableScope]
+    uint32_t fault_record_index;
+             ^
+src/plat/pc99/machine/intel-vtd.c:323:16: style: The scope of the variable 'vtd_pte_slot' can be reduced. [variableScope]
+    vtd_pte_t *vtd_pte_slot;
+               ^
+src/plat/pc99/machine/intel-vtd.c:398:21: style: Variable 'status' is assigned a value that is never used. [unreadVariable]
+    uint32_t status = 0;
+                    ^
+src/plat/tk1/machine/smmu.c:167:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("Total %d IOASID set up\n", (asid - 1));
+    ^
+src/util.c:358:9: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+        x >>= bits; // xi != 0 --> x & 0x00000001 != 0
+        ^
+src/util.c:409:9: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+        x >>= bits; // xi != 0 --> x & 0x0000000000000001 != 0
+        ^
+src/util.c:45:14: style: The scope of the variable 'p' can be reduced. [variableScope]
+    uint8_t *p;
+             ^
+src/util.c:78:9: style: The scope of the variable 'diff' can be reduced. [variableScope]
+    int diff;
+        ^
+src/util.c:105:10: style: The scope of the variable 'res' can be reduced. [variableScope]
+    long res;
+         ^
+src/util.c:358:11: style: Variable 'x' is assigned a value that is never used. [unreadVariable]
+        x >>= bits; // xi != 0 --> x & 0x00000001 != 0
+          ^
+src/util.c:409:11: style: Variable 'x' is assigned a value that is never used. [unreadVariable]
+        x >>= bits; // xi != 0 --> x & 0x0000000000000001 != 0
+          ^
+src/arch/arm/32/object/objecttype.c:379:0: style: The function 'Arch_createObject' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/debug.c:1222:0: style: The function 'Arch_debugAssociateVCPUTCB' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/object/objecttype.c:536:0: style: The function 'Arch_decodeInvocation' is never used. [unusedFunction]
+
+^
+src/arch/arm/object/tcb.c:15:0: style: The function 'Arch_decodeTransfer' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/object/objecttype.c:36:0: style: The function 'Arch_deriveCap' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/object/objecttype.c:143:0: style: The function 'Arch_finaliseCap' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/object/objecttype.c:350:0: style: The function 'Arch_getObjectSize' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/object/objecttype.c:120:0: style: The function 'Arch_maskCapRights' is never used. [unusedFunction]
+
+^
+src/arch/arm/object/tcb.c:20:0: style: The function 'Arch_performTransfer' is never used. [unusedFunction]
+
+^
+src/arch/x86/object/objecttype.c:548:0: style: The function 'Arch_postCapDeletion' is never used. [unusedFunction]
+
+^
+src/arch/arm/kernel/thread.c:9:0: style: The function 'Arch_postModifyRegisters' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/object/objecttype.c:564:0: style: The function 'Arch_prepareThreadDelete' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/object/objecttype.c:323:0: style: The function 'Arch_sameObjectAs' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/object/objecttype.c:115:0: style: The function 'Arch_updateCapData' is never used. [unusedFunction]
+
+^
+src/arch/x86/kernel/vspace.c:604:0: style: The function 'SuperUserFromVMRights' is never used. [unusedFunction]
+
+^
+src/arch/arm/object/vcpu.c:141:0: style: The function 'VGICMaintenance' is never used. [unusedFunction]
+
+^
+src/arch/arm/object/vcpu.c:110:0: style: The function 'VPPIEvent' is never used. [unusedFunction]
+
+^
+src/util.c:429:0: style: The function '__clzdi2' is never used. [unusedFunction]
+
+^
+src/util.c:422:0: style: The function '__clzsi2' is never used. [unusedFunction]
+
+^
+src/util.c:443:0: style: The function '__ctzdi2' is never used. [unusedFunction]
+
+^
+src/util.c:436:0: style: The function '__ctzsi2' is never used. [unusedFunction]
+
+^
+src/assert.c:28:0: style: The function '_assert_fail' is never used. [unusedFunction]
+
+^
+src/assert.c:12:0: style: The function '_fail' is never used. [unusedFunction]
+
+^
+src/arch/x86/kernel/apic.c:174:0: style: The function 'apic_ack_active_interrupt' is never used. [unusedFunction]
+
+^
+src/arch/x86/kernel/x2apic.c:45:0: style: The function 'apic_is_interrupt_pending' is never used. [unusedFunction]
+
+^
+src/arch/x86/kernel/x2apic.c:111:0: style: The function 'apic_send_ipi_core' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/errata.c:39:0: style: The function 'arm_errata' is never used. [unusedFunction]
+
+^
+src/benchmark/benchmark_track.c:17:0: style: The function 'benchmark_track_exit' is never used. [unusedFunction]
+
+^
+src/object/notification.c:352:0: style: The function 'bindNotification' is never used. [unusedFunction]
+
+^
+src/arch/x86/kernel/smp_sys.c:124:0: style: The function 'boot_node' is never used. [unusedFunction]
+
+^
+src/arch/x86/kernel/boot_sys.c:711:0: style: The function 'boot_sys' is never used. [unusedFunction]
+
+^
+src/arch/x86/machine/breakpoint.c:53:0: style: The function 'byte8BreakpointsSupported' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/debug.c:106:0: style: The function 'byte8WatchpointsSupported' is never used. [unusedFunction]
+
+^
+src/arch/arm/c_traps.c:94:0: style: The function 'c_handle_data_fault' is never used. [unusedFunction]
+
+^
+src/arch/arm/c_traps.c:55:0: style: The function 'c_handle_enfp' is never used. [unusedFunction]
+
+^
+src/arch/riscv/c_traps.c:114:0: style: The function 'c_handle_exception' is never used. [unusedFunction]
+
+^
+src/arch/arm/c_traps.c:157:0: style: The function 'c_handle_fastpath_call' is never used. [unusedFunction]
+
+^
+src/arch/arm/c_traps.c:193:0: style: The function 'c_handle_fastpath_reply_recv' is never used. [unusedFunction]
+
+^
+src/arch/arm/c_traps.c:174:0: style: The function 'c_handle_fastpath_signal' is never used. [unusedFunction]
+
+^
+src/arch/arm/c_traps.c:99:0: style: The function 'c_handle_instruction_fault' is never used. [unusedFunction]
+
+^
+src/arch/arm/c_traps.c:141:0: style: The function 'c_handle_syscall' is never used. [unusedFunction]
+
+^
+src/arch/arm/c_traps.c:19:0: style: The function 'c_handle_undefined_instruction' is never used. [unusedFunction]
+
+^
+src/arch/arm/c_traps.c:215:0: style: The function 'c_handle_vcpu_fault' is never used. [unusedFunction]
+
+^
+src/arch/x86/c_traps.c:191:0: style: The function 'c_handle_vmexit' is never used. [unusedFunction]
+
+^
+src/arch/x86/c_traps.c:20:0: style: The function 'c_nested_interrupt' is never used. [unusedFunction]
+
+^
+src/arch/x86/64/c_traps.c:464:0: style: The function 'c_x64_handle_interrupt' is never used. [unusedFunction]
+
+^
+src/object/endpoint.c:375:0: style: The function 'cancelAllIPC' is never used. [unusedFunction]
+
+^
+src/object/notification.c:243:0: style: The function 'cancelAllSignals' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/kernel/vspace.c:660:0: style: The function 'checkValidIPCBuffer' is never used. [unusedFunction]
+
+^
+src/object/cnode.c:42:0: style: The function 'decodeCNodeInvocation' is never used. [unusedFunction]
+
+^
+src/arch/x86/32/kernel/vspace_32paging.c:247:0: style: The function 'decodeIA32PageDirectoryInvocation' is never used. [unusedFunction]
+
+^
+src/object/interrupt.c:23:0: style: The function 'decodeIRQControlInvocation' is never used. [unusedFunction]
+
+^
+src/object/interrupt.c:86:0: style: The function 'decodeIRQHandlerInvocation' is never used. [unusedFunction]
+
+^
+src/object/schedcontrol.c:153:0: style: The function 'decodeSchedControlInvocation' is never used. [unusedFunction]
+
+^
+src/arch/x86/object/tcb.c:47:0: style: The function 'decodeSetEPTRoot' is never used. [unusedFunction]
+
+^
+src/object/untyped.c:26:0: style: The function 'decodeUntypedInvocation' is never used. [unusedFunction]
+
+^
+src/object/interrupt.c:184:0: style: The function 'deletedIRQHandler' is never used. [unusedFunction]
+
+^
+src/object/interrupt.c:175:0: style: The function 'deletingIRQHandler' is never used. [unusedFunction]
+
+^
+src/smp/ipi.c:96:0: style: The function 'doRemoteMaskOp' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/debug.c:383:0: style: The function 'dumpBpsAndWpsContext' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/debug.c:362:0: style: The function 'dumpBpsAndWpsCp' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/debug.c:597:0: style: The function 'getBreakpoint' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/kernel/vspace.c:1149:0: style: The function 'getHWASID' is never used. [unusedFunction]
+
+^
+src/arch/x86/32/kernel/vspace_32paging.c:179:0: style: The function 'getValidNativeRoot' is never used. [unusedFunction]
+
+^
+src/arch/x86/32/kernel/vspace_32paging.c:28:0: style: The function 'get_boot_pd' is never used. [unusedFunction]
+
+^
+src/arch/x86/api/faults.c:54:0: style: The function 'handleKernelException' is never used. [unusedFunction]
+
+^
+src/machine/io.c:626:0: style: The function 'impl_ksnvprintf' is never used. [unusedFunction]
+
+^
+src/machine/io.c:614:0: style: The function 'impl_kvprintf' is never used. [unusedFunction]
+
+^
+src/arch/x86/32/kernel/vspace_32paging.c:63:0: style: The function 'init_boot_pd' is never used. [unusedFunction]
+
+^
+src/arch/arm/kernel/boot.c:621:0: style: The function 'init_kernel' is never used. [unusedFunction]
+
+^
+src/object/cnode.c:745:0: style: The function 'insertNewCap' is never used. [unusedFunction]
+
+^
+src/plat/pc99/machine/ioapic.c:87:0: style: The function 'ioapic_mask' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/kernel/vspace.c:2774:0: style: The function 'kernelDataAbort' is never used. [unusedFunction]
+
+^
+src/arch/arm/32/kernel/vspace.c:2766:0: style: The function 'kernelPrefetchAbort' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/io.c:19:0: style: The function 'kernel_getDebugChar' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/io.c:12:0: style: The function 'kernel_putDebugChar' is never used. [unusedFunction]
+
+^
+src/arch/x86/kernel/vspace.c:130:0: style: The function 'map_kernel_window_devices' is never used. [unusedFunction]
+
+^
+src/plat/pc99/machine/pic.c:88:0: style: The function 'pic_ack_active_irq' is never used. [unusedFunction]
+
+^
+src/plat/pc99/machine/pic.c:64:0: style: The function 'pic_is_irq_pending' is never used. [unusedFunction]
+
+^
+src/plat/pc99/machine/pic.c:39:0: style: The function 'pic_mask_irq' is never used. [unusedFunction]
+
+^
+src/plat/tk1/machine/smmu.c:224:0: style: The function 'plat_smmu_handle_interrupt' is never used. [unusedFunction]
+
+^
+src/machine/profiler.c:53:0: style: The function 'profiler_list' is never used. [unusedFunction]
+
+^
+src/machine/profiler.c:72:0: style: The function 'profiler_record_sample' is never used. [unusedFunction]
+
+^
+src/machine/profiler.c:42:0: style: The function 'profiler_reset' is never used. [unusedFunction]
+
+^
+src/drivers/timer/generic_timer.c:89:0: style: The function 'restore_virt_timer' is never used. [unusedFunction]
+
+^
+libsel4/src/sel4_bootinfo.c:25:0: style: The function 'seL4_GetBootInfo' is never used. [unusedFunction]
+
+^
+libsel4/src/sel4_bootinfo.c:20:0: style: The function 'seL4_InitBootInfo' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/debug.c:529:0: style: The function 'setBreakpoint' is never used. [unusedFunction]
+
+^
+src/kernel/thread.c:467:0: style: The function 'setDomain' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/gic_v3.c:291:0: style: The function 'setIRQTrigger' is never used. [unusedFunction]
+
+^
+src/kernel/thread.c:479:0: style: The function 'setMCPriority' is never used. [unusedFunction]
+
+^
+src/kernel/thread.c:513:0: style: The function 'setPriority' is never used. [unusedFunction]
+
+^
+src/object/cnode.c:870:0: style: The function 'slotCapLongRunningDelete' is never used. [unusedFunction]
+
+^
+src/string.c:28:0: style: The function 'strlcat' is never used. [unusedFunction]
+
+^
+src/kernel/thread.c:69:0: style: The function 'suspend' is never used. [unusedFunction]
+
+^
+src/drivers/serial/bcm2835-aux-uart.c:40:0: style: The function 'uart_drv_putchar' is never used. [unusedFunction]
+
+^
+src/object/notification.c:332:0: style: The function 'unbindMaybeNotification' is never used. [unusedFunction]
+
+^
+src/object/notification.c:342:0: style: The function 'unbindNotification' is never used. [unusedFunction]
+
+^
+src/arch/arm/machine/debug.c:632:0: style: The function 'unsetBreakpoint' is never used. [unusedFunction]
+
+^
+src/arch/x86/32/c_traps.c:22:0: style: The function 'vmlaunch_failed' is never used. [unusedFunction]
+
+^
+src/plat/pc99/machine/intel-vtd.c:268:0: style: The function 'vtd_get_n_paging' is never used. [unusedFunction]
+
+^
+src/plat/pc99/machine/intel-vtd.c:259:0: style: The function 'vtd_handle_fault' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
